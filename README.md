@@ -53,7 +53,7 @@ The easy way to host this bot
 ```
 
 
- <h3> <details>
+ <h2> <details>
   <summary><b>Credits 💖</b></summary>
 
 
@@ -64,7 +64,7 @@ The easy way to host this bot
 - [daisyx-old](https://github.com/TeamDaisyX/Daisy-OLD)
 - [innexia](https://github.com/DarkCybers/innexia/tree/Sammy/innexiaBot)
 
-</details> </h3>
+</details> </h2>
 
 ### Support & Updates 🌹
 <a href="https://t.me/slbotzone"><img src="https://img.shields.io/badge/Join-Group%20Support-blue.svg?style=for-the-badge&logo=Telegram">
@@ -74,6 +74,6 @@ The easy way to host this bot
 ## Read this carefully
 ``` 
  - This is not entirely edited by me and I only modified the original repo.
- - The real owner here is [hirunaofficial](https://github.com/hirunaofficial) and I offer him my special thanks.
+ - The real owner here is hirunaofficial and I offer him my special thanks.
  - You can use his repo below at any time if you want
 ```
