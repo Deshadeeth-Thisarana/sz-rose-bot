@@ -1,6 +1,5 @@
 <h1> A Powerful, Smart And Simple Group Manager szrose bot </h1>
-
-
+This is the clone of [Telegram-Group-Management-Bot-DewmiBot](https://github.com/hirunaofficial/Telegram-Group-Management-Bot-DewmiBot)
 
 <p align="center"><a href="https://t.me/szrosebot"><img src="https://telegra.ph/file/962fd9b77226c7c21553c.png" width="400"></a></p>
 <p align="center">
@@ -52,7 +51,6 @@ The easy way to host this bot
 - python3 -m bot
 ```
 
-
  <h2> <details>
   <summary><b>Credits 💖</b></summary>
 
@@ -66,12 +64,12 @@ The easy way to host this bot
 
 </details> </h2>
 
-### Support & Updates 🌹
+### Support & Updates 
 <a href="https://t.me/slbotzone"><img src="https://img.shields.io/badge/Join-Group%20Support-blue.svg?style=for-the-badge&logo=Telegram">
 
 </a> <a href="https://t.me/SL_bot_zone"><img src="https://img.shields.io/badge/Join-Updates%20Channel-blue.svg?style=for-the-badge&logo=Telegram"></a>
 
-## Read this carefully
+## Read this carefully⚠️
 ``` 
  - This is not entirely edited by me and I only modified the original repo.
  - The real owner here is hirunaofficial and I offer him my special thanks.
