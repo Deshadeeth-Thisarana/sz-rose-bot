@@ -4,7 +4,7 @@
 
 <p align="center"><a href="https://t.me/szrosebot"><img src="https://telegra.ph/file/962fd9b77226c7c21553c.png" width="400"></a></p>
 <p align="center">
-    <a href="https://www.python.org/" alt="made-with-tethon"> <img src="https://img.shields.io/badge/Made%20with-Python-black.svg?style=flat-square&logo=python&logoColor=blue&color=dark" /></a>    
+    <a href="https://www.python.org/" alt="made-with-tethon"> <img src="https://img.shields.io/badge/Made%20with-telethon-black.svg?style=flat-square&logo=python&logoColor=blue&color=red" /></a>    
     <a href="https://github.com/youtubeslgeekshow/sz-rose-bot/graphs/commit-activity" alt="Maintenance"> <img src="https://img.shields.io/badge/Maintained%3F-yes-pink.svg?style=flat-square" /></a>    
     <a href="https://app.codacy.com/gh/youtubeslgeekshow/sz-rose-bot/dashboard"> <img src="https://img.shields.io/codacy/grade/a723cb464d5a4d25be3152b5d71de82d?color=pink&logo=codacy&style=flat-square" alt="Codacy" /></a><br>
     <a href="https://github.com/youtubeslgeekshow/sz-rose-bot"> <img src="https://img.shields.io/github/repo-size/youtubeslgeekshow/sz-rose-bot?color=pink&logo=github&logoColor=blue&style=flat-square" /></a>    
@@ -51,7 +51,7 @@ The easy way to host this bot
 - sudo nano config.py #Fill it with your variables value.
 - python3 -m bot
 ```
- </details> 
+
 
  <h3> <details>
   <summary><b>Credits 💖</b></summary>
@@ -71,3 +71,9 @@ The easy way to host this bot
 
 </a> <a href="https://t.me/SL_bot_zone"><img src="https://img.shields.io/badge/Join-Updates%20Channel-blue.svg?style=for-the-badge&logo=Telegram"></a>
 
+## Read this carefully
+``` 
+ - This is not entirely edited by me and I only modified the original repo.
+ - The real owner here is [hirunaofficial](https://github.com/hirunaofficial) and I offer him my special thanks.
+ - You can use his repo below at any time if you want
+```
