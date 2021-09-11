@@ -1,5 +1,6 @@
 <h1> A Powerful, Smart And Simple Group Manager szrose bot </h1>
-This is the clone of [DewmiBot](https://github.com/hirunaofficial/Telegram-Group-Management-Bot-DewmiBot)
+
+This is the clone of [DewmiBot](https://github.com/hirunaofficial/Telegram-Group-Management-Bot-DewmiBot) 
 
 <p align="center"><a href="https://t.me/szrosebot"><img src="https://telegra.ph/file/962fd9b77226c7c21553c.png" width="400"></a></p>
 <p align="center">
