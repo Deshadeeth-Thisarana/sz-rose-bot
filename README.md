@@ -4,21 +4,8 @@ This is the clone of [DewmiBot](https://github.com/hirunaofficial/Telegram-Group
 
 <p align="center"><a href="https://t.me/szrosebot"><img src="https://telegra.ph/file/962fd9b77226c7c21553c.png" width="400"></a></p>
 <p align="center">
-    <a href="https://www.python.org/" alt="made-with-tethon"> <img src="https://img.shields.io/badge/Made%20with-telethon-black.svg?style=flat-square&logo=python&logoColor=blue&color=red" /></a>    
-    <a href="https://github.com/youtubeslgeekshow/sz-rose-bot/graphs/commit-activity" alt="Maintenance"> <img src="https://img.shields.io/badge/Maintained%3F-yes-pink.svg?style=flat-square" /></a>    
-    <a href="https://app.codacy.com/gh/youtubeslgeekshow/sz-rose-bot/dashboard"> <img src="https://img.shields.io/codacy/grade/a723cb464d5a4d25be3152b5d71de82d?color=pink&logo=codacy&style=flat-square" alt="Codacy" /></a><br>
-    <a href="https://github.com/youtubeslgeekshow/sz-rose-bot"> <img src="https://img.shields.io/github/repo-size/youtubeslgeekshow/sz-rose-bot?color=pink&logo=github&logoColor=blue&style=flat-square" /></a>    
-    <a href="https://github.com/youtubeslgeekshow/sz-rose-bot/commits/main"> <img src="https://img.shields.io/github/last-commit/youtubeslgeekshow/sz-rose-bot?color=pink&logo=github&logoColor=blue&style=flat-square" /></a>    
-    <a href="https://github.com/youtubeslgeekshow/sz-rose-bot/issues"> <img src="https://img.shields.io/github/issues/youtubeslgeekshow/sz-rose-bot?color=pink&logo=github&logoColor=blue&style=flat-square" /></a>   
-    <a href="https://github.com/youtubeslgeekshow/sz-rose-bot/network/members"> <img src="https://img.shields.io/github/forks/youtubeslgeekshow/sz-rose-bot?color=pink&logo=github&logoColor=blue&style=flat-square" /></a>     
-    <a href="https://github.com/youtubeslgeekshow/sz-rose-bot/network/members"> <img src="https://img.shields.io/github/stars/youtubeslgeekshow/sz-rose-bot?color=pink&logo=github&logoColor=blue&style=flat-square" /></a>  
-</p>
 
-
-<p align="center">
-    <a href="https://python.org">
-        <img src="http://forthebadge.com/images/badges/made-with-python.svg" alt="made-with-python">
-    </a> <br>
+<p align="center"> <br>
     <img src="https://img.shields.io/github/license/youtubeslgeekshow/sz-rose-bot?style=for-the-badge&logo=appveyor" alt="LICENSE">
     <img src="https://img.shields.io/github/contributors/youtubeslgeekshow/sz-rose-bot?style=for-the-badge&logo=appveyor" alt="Contributors">
     <img src="https://img.shields.io/github/repo-size/youtubeslgeekshow/sz-rose-bot?style=for-the-badge&logo=appveyor" alt="Repository Size"> <br>
