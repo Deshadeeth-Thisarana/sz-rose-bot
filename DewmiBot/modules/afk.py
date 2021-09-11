@@ -1,177 +1,140 @@
-import html
-import random
-
-from telegram import MessageEntity, Update
-from telegram.error import BadRequest
-from telegram.ext import CallbackContext, Filters, MessageHandler, run_async
-
-from DewmiBot import dispatcher
-from DewmiBot.modules.disable import DisableAbleCommandHandler, DisableAbleMessageHandler
+import os
+from DewmiBot import tbot, CMD_HELP
 from DewmiBot.modules.sql import afk_sql as sql
-from DewmiBot.modules.users import get_user_id
 
-AFK_GROUP = 7
-AFK_REPLY_GROUP = 8
+import time
+from telethon import types
+from telethon.tl import functions
+from DewmiBot.events import register
 
+from pymongo import MongoClient
+from DewmiBot import MONGO_DB_URI
+from telethon import events
 
-@run_async
-def afk(update: Update, context: CallbackContext):
-    args = update.effective_message.text.split(None, 1)
-    user = update.effective_user
-
-    if not user:  # ignore channels
-        return
-
-    if user.id in [777000, 1087968824]:
-        return
-
-    notice = ""
-    if len(args) >= 2:
-        reason = args[1]
-        if len(reason) > 100:
-            reason = reason[:100]
-            notice = "\nYour afk reason was shortened to 100 characters."
-    else:
-        reason = ""
-
-    sql.set_afk(update.effective_user.id, reason)
-    fname = update.effective_user.first_name
-    try:
-        update.effective_message.reply_text("{} is now away!{}".format(fname, notice))
-    except BadRequest:
-        pass
+client = MongoClient()
+client = MongoClient(MONGO_DB_URI)
+db = client["missjuliarobot"]
+approved_users = db.approve
 
 
-@run_async
-def no_longer_afk(update: Update, context: CallbackContext):
-    user = update.effective_user
-    message = update.effective_message
-
-    if not user:  # ignore channels
-        return
-
-    res = sql.rm_afk(user.id)
-    if res:
-        if message.new_chat_members:  # dont say msg
-            return
-        firstname = update.effective_user.first_name
-        try:
-            options = [
-                "{} is here!",
-                "{} is back!",
-                "{} is now in the chat!",
-                "{} is awake!",
-                "{} is back online!",
-                "{} is finally here!",
-                "Welcome back! {}",
-                "Where is {}?\nIn the chat!",
-            ]
-            chosen_option = random.choice(options)
-            update.effective_message.reply_text(chosen_option.format(firstname))
-        except:
-            return
-
-
-@run_async
-def reply_afk(update: Update, context: CallbackContext):
-    bot = context.bot
-    message = update.effective_message
-    userc = update.effective_user
-    userc_id = userc.id
-    if message.entities and message.parse_entities(
-        [MessageEntity.TEXT_MENTION, MessageEntity.MENTION]
-    ):
-        entities = message.parse_entities(
-            [MessageEntity.TEXT_MENTION, MessageEntity.MENTION]
+async def is_register_admin(chat, user):
+    if isinstance(chat, (types.InputPeerChannel, types.InputChannel)):
+        return isinstance(
+            (
+                await tbot(functions.channels.GetParticipantRequest(chat, user))
+            ).participant,
+            (types.ChannelParticipantAdmin, types.ChannelParticipantCreator),
         )
-
-        chk_users = []
-        for ent in entities:
-            if ent.type == MessageEntity.TEXT_MENTION:
-                user_id = ent.user.id
-                fst_name = ent.user.first_name
-
-                if user_id in chk_users:
-                    return
-                chk_users.append(user_id)
-
-            if ent.type == MessageEntity.MENTION:
-                user_id = get_user_id(
-                    message.text[ent.offset : ent.offset + ent.length]
-                )
-                if not user_id:
-                    # Should never happen, since for a user to become AFK they must have spoken. Maybe changed username?
-                    return
-
-                if user_id in chk_users:
-                    return
-                chk_users.append(user_id)
-
-                try:
-                    chat = bot.get_chat(user_id)
-                except BadRequest:
-                    print(
-                        "Error: Could not fetch userid {} for AFK module".format(
-                            user_id
-                        )
-                    )
-                    return
-                fst_name = chat.first_name
-
-            else:
-                return
-
-            check_afk(update, context, user_id, fst_name, userc_id)
-
-    elif message.reply_to_message:
-        user_id = message.reply_to_message.from_user.id
-        fst_name = message.reply_to_message.from_user.first_name
-        check_afk(update, context, user_id, fst_name, userc_id)
+    if isinstance(chat, types.InputPeerUser):          
+        return True
 
 
-def check_afk(update, context, user_id, fst_name, userc_id):
-    if sql.is_afk(user_id):
-        user = sql.check_afk_status(user_id)
-        if not user.reason:
-            if int(userc_id) == int(user_id):
-                return
-            res = "{} is afk".format(fst_name)
-            update.effective_message.reply_text(res)
+@register(pattern=r"(.*?)")
+async def _(event):
+    sender = await event.get_sender()    
+    approved_userss = approved_users.find({})
+    for ch in approved_userss:
+        iid = ch["id"]
+        userss = ch["user"]
+    if event.is_group:
+        if await is_register_admin(event.input_chat, event.message.sender_id):
+            pass
+        elif event.chat_id == iid and event.sender_id == userss:
+            pass
         else:
-            if int(userc_id) == int(user_id):
-                return
-            res = "{} is afk.\nReason: <code>{}</code>".format(
-                html.escape(fst_name), html.escape(user.reason)
-            )
-            update.effective_message.reply_text(res, parse_mode="html")
+            return
 
+    if event.text.startswith("/afk"):
+     cmd = event.text[len("/afk ") :]
+     if cmd is not None:
+        reason = cmd
+     else:
+        reason = ""
+     fname = sender.first_name        
+     # print(reason)
+     start_time = time.time()
+     sql.set_afk(sender.id, reason, start_time)
+     await event.reply(
+           "**{} is now AFK !**".format(fname),
+           parse_mode="markdown")
+     return
+
+    if sql.is_afk(sender.id):
+       res = sql.rm_afk(sender.id)
+       if res:
+          firstname = sender.first_name
+          text = "**{} is no longer AFK !**".format(firstname)
+          await event.reply(text, parse_mode="markdown")
+        
+
+@tbot.on(events.NewMessage(pattern=None))
+async def _(event):
+    sender = event.sender_id
+    msg = str(event.text)
+    global let
+    global userid
+    userid = None
+    let = None
+    if event.reply_to_msg_id:
+        reply = await event.get_reply_message()
+        userid = reply.sender_id
+    else:
+        try:
+            for (ent, txt) in event.get_entities_text():
+                if ent.offset != 0:
+                    break
+                if isinstance(ent, types.MessageEntityMention):
+                    pass
+                elif isinstance(ent, types.MessageEntityMentionName):
+                    pass
+                else:
+                    return
+                c = txt
+                a = c.split()[0]
+                let = await tbot.get_input_entity(a)
+                userid = let.user_id
+        except Exception:
+            return
+
+    if not userid:
+        return
+    if sender == userid:
+        return
+
+    if event.is_group:
+        pass
+    else:
+        return
+
+    if sql.is_afk(userid):
+        user = sql.check_afk_status(userid)
+        if not user.reason:
+            etime = user.start_time
+            elapsed_time = time.time() - float(etime)
+            final = time.strftime("%Hh: %Mm: %Ss", time.gmtime(elapsed_time))
+            fst_name = "This user"
+            res = "**{} is AFK !**\n\n**Last seen**: {}".format(fst_name, final)
+
+            await event.reply(res, parse_mode="markdown")
+        else:
+            etime = user.start_time
+            elapsed_time = time.time() - float(etime)
+            final = time.strftime("%Hh: %Mm: %Ss", time.gmtime(elapsed_time))
+            fst_name = "This user"
+            res = "**{} is AFK !**\n\n**Reason**: {}\n\n**Last seen**: {}".format(
+                fst_name, user.reason, final
+            )
+            await event.reply(res, parse_mode="markdown")
+    userid = ""  # after execution
+    let = ""  # after execution
+
+
+file_help = os.path.basename(__file__)
+file_help = file_help.replace(".py", "")
+file_helpo = file_help.replace("_", " ")
 
 __help__ = """
-@szrosebot🇱🇰
- ❍ /afk <reason> *:* mark yourself as AFK(away from keyboard).
- ❍ /brb <reason> *:* same as the afk command - but not a command.
- 
- When marked as AFK, any mentions will be replied to with a message to say you're not available!
- 
+ - /afk <reason>: mark yourself as AFK(Away From Keyboard)
 """
 
-AFK_HANDLER = DisableAbleCommandHandler("afk", afk)
-AFK_REGEX_HANDLER = DisableAbleMessageHandler(
-    Filters.regex(r"^(?i)brb(.*)$"), afk, friendly="afk"
-)
-NO_AFK_HANDLER = MessageHandler(Filters.all & Filters.group, no_longer_afk)
-AFK_REPLY_HANDLER = MessageHandler(Filters.all & Filters.group, reply_afk)
-
-dispatcher.add_handler(AFK_HANDLER, AFK_GROUP)
-dispatcher.add_handler(AFK_REGEX_HANDLER, AFK_GROUP)
-dispatcher.add_handler(NO_AFK_HANDLER, AFK_GROUP)
-dispatcher.add_handler(AFK_REPLY_HANDLER, AFK_REPLY_GROUP)
-
-__mod_name__ = "AFK"
-__command_list__ = ["afk"]
-__handlers__ = [
-    (AFK_HANDLER, AFK_GROUP),
-    (AFK_REGEX_HANDLER, AFK_GROUP),
-    (NO_AFK_HANDLER, AFK_GROUP),
-    (AFK_REPLY_HANDLER, AFK_REPLY_GROUP),
-]
+CMD_HELP.update({file_helpo: [file_helpo, __help__]})
