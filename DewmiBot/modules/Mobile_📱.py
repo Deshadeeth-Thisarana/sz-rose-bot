@@ -114,7 +114,7 @@ file_help = file_help.replace(".py", "")
 file_helpo = file_help.replace("_", " ")
 
 __help__ = """
- - /specs <brand> <device>: Get device specifications info
+ - /specs <brand> <device>: Get device specifications info 
 """
 
 CMD_HELP.update({
