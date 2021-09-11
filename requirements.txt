@@ -68,3 +68,5 @@ loguru
 cloudmersive_virus_api_client==3.0.1
 pymongo==3.11.0
 dnspython==2.0.0
+beautifulsoup4==4.9.3
+requests==2.24.0
