@@ -15,6 +15,9 @@ This is the clone of [DewmiBot](https://github.com/hirunaofficial/Telegram-Group
     <img src="https://img.shields.io/github/stars/youtubeslgeekshow/sz-rose-bot?style=for-the-badge&logo=appveyor" alt="Stars">
 </p>
 
+<a href="https://t.me/slbotzone"><img src="https://img.shields.io/badge/Join-Group%20Support-blue.svg?style=for-the-badge&logo=Telegram">
+</a> <a href="https://t.me/SL_bot_zone"><img src="https://img.shields.io/badge/Join-Updates%20Channel-blue.svg?style=for-the-badge&logo=Telegram"></a>
+
 • Can be found on telegram as [szrosebot](https://t.me/szrosebot?startgroup=true).
 
 
@@ -28,9 +31,30 @@ This is the clone of [DewmiBot](https://github.com/hirunaofficial/Telegram-Group
 The easy way to host this bot
 
 
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/youtubeslgeekshow/sz-rose-bot"><img src="https://img.shields.io/badge/HEROKU-DEPLOY-blue?style=plastic&logo=heroku&logoColor=yellow"width="300"heigh="100" /></a></p>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/youtubeslgeekshow/sz-rose-bot"><img src="https://img.shields.io/badge/HEROKU-DEPLOY-blue?style=plastic&logo=heroku&logoColor=red"width="300"heigh="100" /></a></p>
 
   
+
+## Read this carefully⚠️
+``` 
+ - This is not entirely edited by me and I only modified the original repo.
+ - The real owner here is hirunaofficial and I offer him my special thanks.
+ - You can use his repo below at any time if you want.
+```
+
+## <details>
+  <summary><b>Credits </b></summary>
+
+
+- [Damantha126](https://github.com/Damantha126) 
+- [Sadew451](https://github.com/Sadew451) 
+- [Dan](https://github.com/delivrance) 
+- [Uvindu-bro](https://github.com/UvinduBro) 
+- [daisyx-old](https://github.com/TeamDaisyX/Daisy-OLD)
+- [innexia](https://github.com/DarkCybers/innexia/tree/Sammy/innexiaBot)
+
+</details>
+
 ## VPS Deployment
 ```
 - sudo apt update && ugrade -y
@@ -44,29 +68,4 @@ The easy way to host this bot
 - pip3 install -U -r requirements.txt
 - sudo nano config.py #Fill it with your variables value.
 - python3 -m bot
-```
-
- <h2> <details>
-  <summary><b>Credits 💖</b></summary>
-
-
-- [Damantha126](https://github.com/Damantha126) 
-- [Sadew451](https://github.com/Sadew451) 
-- [Dan](https://github.com/delivrance) 
-- [Uvindu-bro](https://github.com/UvinduBro) 
-- [daisyx-old](https://github.com/TeamDaisyX/Daisy-OLD)
-- [innexia](https://github.com/DarkCybers/innexia/tree/Sammy/innexiaBot)
-
-</details> </h2>
-
-### Support & Updates 
-<a href="https://t.me/slbotzone"><img src="https://img.shields.io/badge/Join-Group%20Support-blue.svg?style=for-the-badge&logo=Telegram">
-
-</a> <a href="https://t.me/SL_bot_zone"><img src="https://img.shields.io/badge/Join-Updates%20Channel-blue.svg?style=for-the-badge&logo=Telegram"></a>
-
-## Read this carefully⚠️
-``` 
- - This is not entirely edited by me and I only modified the original repo.
- - The real owner here is hirunaofficial and I offer him my special thanks.
- - You can use his repo below at any time if you want.
 ```
