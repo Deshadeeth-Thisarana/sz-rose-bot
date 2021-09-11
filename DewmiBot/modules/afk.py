@@ -67,7 +67,7 @@ async def _(event):
           await event.reply(text, parse_mode="markdown")
         
 
-@tbot.on(events.NewMessage(pattern=None))
+@pbot.on(events.NewMessage(pattern=None))
 async def _(event):
     sender = event.sender_id
     msg = str(event.text)
