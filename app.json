@@ -49,7 +49,16 @@
       "description": "remove.bg api (no need)",
       "value": "",
       "required": false
-      
+       },
+    "MONGO_DB_URI": {
+      "description": "Required for database connections",
+      "value": "",
+      "required": true
+       },
+    "VIRUS_API_KEY": {
+      "description": "Get one from https://cloudmersive.com/virus-api",
+      "value": "",
+      "required": false
       },      
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
