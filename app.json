@@ -44,6 +44,12 @@
          "description": "Your postgres sql db, empty this field if you dont have one.",
          "required": false,
          "value": "sqldbtype://username:pw@hostname:port/db_name"
+       },
+    "REM_BG_API_KEY": {
+      "description": "remove.bg api (no need)",
+      "value": "",
+      "required": false
+      
       },      
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
