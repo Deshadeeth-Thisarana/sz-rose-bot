@@ -92,3 +92,5 @@ The easy way to host this bot
 - sudo nano config.py #Fill it with your variables value.
 - python3 -m bot
 ```
+
+    
