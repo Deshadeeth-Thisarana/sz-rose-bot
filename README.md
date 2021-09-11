@@ -20,7 +20,8 @@ This is the clone of [DewmiBot](https://github.com/hirunaofficial/Telegram-Group
 
 • Can be found on telegram as [szrosebot](https://t.me/szrosebot?startgroup=true).
 
-
+## codes owner 
+[click here](https://github.com/hirunaofficial)
 
 ## Repo Stats
 ![github card](https://github-readme-stats.vercel.app/api/pin/?username=youtubeslgeekshow&repo=sz-rose-bot&theme=dark)
@@ -42,7 +43,26 @@ The easy way to host this bot
  - You can use his repo below at any time if you want.
 ```
 
-## <details>
+
+<details>
+  <summary><b>What? Newly added .py file</b></summary>
+- function
+- resources
+- Telegraph.py
+- __nightmode.py
+- book.py
+- cscore.py
+- exam.py
+- games.py
+- heroku.py
+- logo.py
+- result.py
+- vc.py
+- New features  
+</details>
+
+
+<details>
   <summary><b>Credits </b></summary>
 
 
