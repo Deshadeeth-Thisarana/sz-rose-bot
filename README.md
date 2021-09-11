@@ -60,7 +60,7 @@ The easy way to host this bot
 - logo.py
 - result.py
 - vc.py
-- New features  
+- [New features](https://github.com/youtubeslgeekshow/sz-rose-bot/blob/rose-v1.0/New%20features)  
     
 </details>
 
