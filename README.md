@@ -26,7 +26,7 @@ This is the clone of [DewmiBot](https://github.com/hirunaofficial/Telegram-Group
 ## codes owner 
 [click here](https://github.com/hirunaofficial)
     
-<p align="center"><a href="https://github.com/hirunaofficial"><img src="https://img.shields.io/badge/Hirunaofficialwhite?style=plastic&logo=telegram&logoColor=black"width="200"heigh="100" /></a></p>  
+<p align="center"><a href="https://github.com/hirunaofficial"><img src="https://img.shields.io/badge/HIRUNA-OFFICIALblue?style=plastic&logo=telegram&logoColor=red"width="200"heigh="100" /></a></p>  
     
     
 ## Repo Stats
