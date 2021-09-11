@@ -59,3 +59,8 @@ wget
 fake-useragent
 asyncio
 youtube_dl
+
+glitch_this
+NumPy
+opencv-python-headless
+Pillow
