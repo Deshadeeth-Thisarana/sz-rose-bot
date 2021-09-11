@@ -67,19 +67,19 @@ async def virusscan(event):
     try:
        c.media.document
     except Exception:
-       await event.reply("Thats not a file.")
+       await event.reply("💁🏼‍♂️ This bot accepts only files.\n💬support chat👉 @slbotzone ")
        return
     h = c.media
     try:
        k = h.document.attributes
     except Exception:
-       await event.reply("Thats not a file.")
+       await event.reply("💁🏼‍♂️ This bot accepts only files.\n💬support chat👉 @slbotzone ")
        return
     if not isinstance(h, MessageMediaDocument):
-       await event.reply("Thats not a file.")
+       await event.reply("💁🏼‍♂️ This bot accepts only files.\n💬support chat👉 @slbotzone ")
        return
     if not isinstance(k[0], DocumentAttributeFilename):
-       await event.reply("Thats not a file.")
+       await event.reply("💁🏼‍♂️ This bot accepts only files.\n💬support chat👉 @slbotzone ")
        return
     try:
       virus = c.file.name
