@@ -2,8 +2,8 @@ import sys
 import traceback
 from functools import wraps
 
-from Natsuki import pbot 
-from Natsuki import SUPPORT_CHAT
+from DewmiBot import pbot 
+from DewmiBot import SUPPORT_CHAT
 
 def split_limits(text):
     if len(text) < 2048:
