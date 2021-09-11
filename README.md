@@ -19,8 +19,10 @@ This is the clone of [DewmiBot](https://github.com/hirunaofficial/Telegram-Group
 </a> <a href="https://t.me/SL_bot_zone"><img src="https://img.shields.io/badge/Join-Updates%20Channel-blue.svg?style=for-the-badge&logo=Telegram"></a>
 <a href="https://t.me/szrosebot"><img src="https://img.shields.io/badge/Foundbot%20on-blue.svg?style=for-the-badge&logo=Telegram">
 
-• Can be found on telegram as  [szrosebot](https://t.me/szrosebot?startgroup=true).
-
+• Can be found on telegram as 
+<p align="center"><a href="https://t.me/szrosebot"><img src="https://img.shields.io/badge/SZ-ROSE-BOTred?style=plastic&logo=telegram&logoColor=red"width="200"heigh="100" /></a></p>   
+    
+    
 ## codes owner 
 [click here](https://github.com/hirunaofficial)
 
