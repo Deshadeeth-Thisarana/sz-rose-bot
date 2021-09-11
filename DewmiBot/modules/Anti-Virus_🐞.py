@@ -1,5 +1,5 @@
 import os
-from DewmiBot import tbot
+from DewmiBot import pbot
 from DewmiBot import CMD_HELP, VIRUS_API_KEY
 from telethon import events
 from telethon.tl import functions
