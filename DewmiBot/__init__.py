@@ -88,6 +88,8 @@ if ENV:
     YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", None)
     SPAMWATCH_SUPPORT_CHAT = os.environ.get("SPAMWATCH_SUPPORT_CHAT", None)
     SPAMWATCH_API = os.environ.get("SPAMWATCH_API", None)
+    VIRUS_API_KEY = os.environ.get("VIRUS_API_KEY", None)
+    MONGO_DB_URI = os.environ.get("MONGO_DB_URI", None)
     REPOSITORY = os.environ.get("REPOSITORY", "")
     REDIS_URL = os.environ.get("REDIS_URL")
     IBM_WATSON_CRED_URL = os.environ.get("IBM_WATSON_CRED_URL", None)
