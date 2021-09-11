@@ -15,11 +15,11 @@ This is the clone of [DewmiBot](https://github.com/hirunaofficial/Telegram-Group
     <img src="https://img.shields.io/github/stars/youtubeslgeekshow/sz-rose-bot?style=for-the-badge&logo=appveyor" alt="Stars">
 </p>
 
-<a href="https://t.me/slbotzone"><img src="https://img.shields.io/badge/Join-Group%20Support-blue.svg?style=for-the-badge&logo=Telegram">
+<a href="https://t.me/slbotzone"><img src="https://img.shields.io/badge/support%20group-blue.svg?style=for-the-badge&logo=Telegram">
 </a> <a href="https://t.me/SL_bot_zone"><img src="https://img.shields.io/badge/Join-Updates%20Channel-blue.svg?style=for-the-badge&logo=Telegram"></a>
 <a href="https://t.me/szrosebot"><img src="https://img.shields.io/badge/Foundbot%20on-blue.svg?style=for-the-badge&logo=Telegram">
 
-• Can be found on telegram as [szrosebot](https://t.me/szrosebot?startgroup=true).
+• Can be found on telegram as  [szrosebot](https://t.me/szrosebot?startgroup=true).
 
 ## codes owner 
 [click here](https://github.com/hirunaofficial)
@@ -60,7 +60,7 @@ The easy way to host this bot
 - logo.py
 - result.py
 - vc.py
-- [New features](https://github.com/youtubeslgeekshow/sz-rose-bot/blob/rose-v1.0/New%20features)  
+- [New features]() 
     
 </details>
 
