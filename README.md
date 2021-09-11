@@ -93,4 +93,5 @@ The easy way to host this bot
 - python3 -m bot
 ```
 
-    
+ 
+<p align="center"><a href="https://www.youtube.com/channel/UCvYfJcTr8RY72dIapzMqFQA"><img src="https://img.shields.io/badge/YOU-TUBE-VIDEOred?style=plastic&logo=youtube&logoColor=red"width="300"heigh="100" /></a></p>   
