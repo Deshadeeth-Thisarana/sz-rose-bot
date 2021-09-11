@@ -4,7 +4,7 @@ from DewmiBot import pbot
 import json
 import re
 
-import rapidjson as json
+
 from bs4 import BeautifulSoup
 from requests import get
 from telethon import types
