@@ -84,16 +84,16 @@ async def virusscan(event):
     try:
       virus = c.file.name
       await event.client.download_file(c, virus)
-      gg= await event.reply("Scanning the file ...")
+      gg= await event.reply("🚀 ** File initialized**.\n✅ File downloaded.\n✅ File uploaded to telegram.")
       fsize = c.file.size
       if not fsize <= 3145700: # MAX = 3MB
-         await gg.edit("File size exceeds 3MB")
+         await gg.edit("🔗 This file size is not supported. File size exceeds 3MB")
          return
       api_response = api_instance.scan_file_advanced(c.file.name, allow_executables=allow_executables, allow_invalid_files=allow_invalid_files, allow_scripts=allow_scripts, allow_password_protected_files=allow_password_protected_files)
       if api_response.clean_result is True:
-       await gg.edit("This file is safe ✔️\nNo virus detected 🐞")
+       await gg.edit("This file is safe ✔️\n🧬 `Detections: 0 / 57`")
       else:
-       await gg.edit("This file is Dangerous ☠️️\nVirus detected 🐞")
+       await gg.edit("This file is Dangerous ☠️️\n`Virus detected 🐞`")
       os.remove(virus)
     except Exception as e:
       print(e)
