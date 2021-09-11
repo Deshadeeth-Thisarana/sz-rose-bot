@@ -452,7 +452,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
 __help__ = """
 @szrosebot🇱🇰
-<b> IMAGE EDITOR </b>
+** IMAGE EDITOR **
 
 szrose have some advanced image editing tools inbuilt
 Bright, Circle, RemBG, Blur, Border, Flip, Glitch, Sticker maker and more..
@@ -460,6 +460,6 @@ Bright, Circle, RemBG, Blur, Border, Flip, Glitch, Sticker maker and more..
 ❍ /edit [reply to image]: Open the image editor
 ❍ /rmbg [REPLY]: Revove BG of replied image/sticker.
 
-<i> Special credits to TroJanzHEX </i>
+` Special credits to TroJanzHEX `
 """
 __mod_name__ = "Image Editor"
