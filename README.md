@@ -15,34 +15,8 @@ This is the clone of [DewmiBot](https://github.com/hirunaofficial/Telegram-Group
     <img src="https://img.shields.io/github/stars/youtubeslgeekshow/sz-rose-bot?style=for-the-badge&logo=appveyor" alt="Stars">
 </p>
 
+• Can be found on telegram as [szrosebot](https://t.me/szrosebot?startgroup=true).
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<p align="center">
-  <a href="https://github.com/youtubeslgeekshow/sz-rose-bot/fork">
-    <img src="https://img.shields.io/github/forks/youtubeslgeekshow/sz-rose-bot?color=dark&label=FORK&logo=github&style=plastic"width="100" height="35"> 
-  </a>
-  <a href="https://github.com/youtubeslgeekshow/sz-rose-bot/stars">
-    <img src="https://img.shields.io/github/stars/youtubeslgeekshow/sz-rose-bot?color=dark&label=STARS&logo=github&style=plastic"width="100" height="35">
-  </a>
-</p>  
 
 
 ## Repo Stats
