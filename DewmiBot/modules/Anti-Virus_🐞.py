@@ -106,9 +106,13 @@ file_help = file_help.replace(".py", "")
 file_helpo = file_help.replace("_", " ")
 
 __help__ = """
- - /scanit: Scan a file for virus (MAX SIZE = 3MB)
+@szrosebot🇱🇰
+ ❍ /scanit: Scan a file for virus (MAX SIZE = 3MB)
 """
-__mod name__ = " virus "
+__mod_name__ = "virus"
+
+
+
 
 CMD_HELP.update({
     file_helpo: [
