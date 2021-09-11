@@ -1,5 +1,5 @@
 import os
-from DewmiBot import tbot, CMD_HELP
+from DewmiBot import pbot, CMD_HELP
 from DewmiBot.modules.sql import afk_sql as sql
 
 import time
