@@ -18,7 +18,7 @@ import logging
 from pyrogram import Client
 
 # from pyromod import listen
-from Natsuki.config import get_int_key, get_str_key
+from DewmiBot.config import get_int_key, get_str_key
 
 TOKEN = get_str_key("TOKEN", required=True)
 APP_ID = get_int_key("API_ID", required=True)
