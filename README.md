@@ -74,7 +74,7 @@ The easy way to host this bot
 <details>
   <summary><b>Credits </b></summary>
 
-
+- [TeamDaisyX](https://github.com/TeamDaisyX)
 - [Damantha126](https://github.com/Damantha126) 
 - [Sadew451](https://github.com/Sadew451) 
 - [Dan](https://github.com/delivrance) 
